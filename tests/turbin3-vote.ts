@@ -1,14 +1,19 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
-import { Turbin3Vote } from "../target/types/turbin3_vote";
+import { TurbinVote } from "../target/types/turbin_vote";
 import { assert } from "chai";
 
-describe("turbin3-vote", () => {
+describe("turbin-vote", () => {
   // Configure the client to use the local cluster.
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
 
-  const program = anchor.workspace.Turbin3Vote as Program<Turbin3Vote>;
+  const connection = provider.connection;
+  connection.onLogs("all", (log) => {
+      console.log(log);
+  });
+
+  const program = anchor.workspace.TurbinVote as Program<TurbinVote>;
 
   const uri = "https://wba.dev";
 

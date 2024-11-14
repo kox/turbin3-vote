@@ -1,4 +1,4 @@
-# Turbin3 Vote
+# Turbin Vote
 
 Repository to demostrate the most basic concepts of a anchor program for voting and downvoting. 
 

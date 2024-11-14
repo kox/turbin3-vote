@@ -2,10 +2,10 @@ use anchor_lang::prelude::*;
 
 declare_id!("MWkrWhe9RCcnnCVM9RR7TtppWf2Mf7tnYgnwvG54CL7");
 
-/// Turbin3 Vote program
+/// Turbin Vote program
 /// 
 #[program]
-pub mod turbin3_vote {
+pub mod turbin_vote {
     use super::*;
 
     /// Starting instruction to initialize the PDA account using the URL + ProgramId

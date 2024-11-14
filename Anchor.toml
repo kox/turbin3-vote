@@ -5,7 +5,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-turbin3_vote = "MWkrWhe9RCcnnCVM9RR7TtppWf2Mf7tnYgnwvG54CL7"
+turbin_vote = "MWkrWhe9RCcnnCVM9RR7TtppWf2Mf7tnYgnwvG54CL7"
 
 [registry]
 url = "https://api.apr.dev"
